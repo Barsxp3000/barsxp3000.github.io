@@ -25,16 +25,7 @@ module.exports = function(grunt) {
                 dest: 'build/script.main.min.js'
             }
         },
-        imagemin: {
-            dynamic: {
-                files: [{
-                    expand: true,
-                    cwd: 'img/',
-                    src: ['**/*.{png,jpg,gif}'],
-                    dest: 'img'
-                }]
-            }
-        },
+
         sass: {
             dist: {
                 files: [{
@@ -79,6 +70,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-autoprefixer');
 
-    grunt.registerTask('default', ['concat', 'concat_css', 'uglify', 'sass', 'imagemin', 'autoprefixer']);
+    grunt.registerTask('default', ['concat', 'concat_css', 'uglify', 'sass', 'autoprefixer']);
 
 };

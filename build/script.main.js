@@ -129,8 +129,24 @@
     }
 
     getRandomImages();
-    $('.search_button').on('click', getImages);
+    // $('.search_button').on('click', getImages);
 
+
+
+$(function () {
+  $('.search_txt').keypress(function (event) {
+        if (event.which == '13') {
+            event.preventDefault();
+            getImages();
+
+
+
+    }
+  });
+  $(".search_button").click(function(e) {
+    getImages();
+  });
+});
 });
 
 $(function() {
