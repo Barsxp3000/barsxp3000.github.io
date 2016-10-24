@@ -91,10 +91,7 @@ $(function() {
 $(function () {
   $('.search_txt').keypress(function (event) {
         if (event.which == '13') {
-            event.preventDefault();
             getImages();
-
-
 
     }
   });
