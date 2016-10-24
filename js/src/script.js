@@ -88,17 +88,17 @@ $(function() {
 
 
 
-$(function () {
-  $('.search_txt').keypress(function (event) {
-        if (event.which == '13') {
-            getImages();
+    $(function() {
+        $('.search_txt').keypress(function(event) {
+            if (event.which == '13') {
+                getImages();
 
-    }
-  });
-  $(".search_button").click(function(e) {
-    getImages();
-  });
-});
+            }
+        });
+        $(".search_button").click(function(e) {
+            getImages();
+        });
+    });
 });
 
 $(function() {
